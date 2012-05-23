@@ -25,6 +25,7 @@ public class QuestionDetail extends Activity {
 	private ImageButton btn_answer;
 	private Button btn_check;
 	private Question question;
+	private Button btn_back;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,14 @@ public class QuestionDetail extends Activity {
 		txt_question = (TextView) findViewById(R.id.txt_question);
 		ViewGroup topguid = (ViewGroup) getLayoutInflater().inflate(R.layout.topguid, null);
 		toptitle = (TextView) topguid.findViewById(R.id.txt_title);
+		btn_back=(Button)topguid.findViewById(R.id.back);
+		btn_back.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				finish();
+			}
+		});
 		btn_answer = (ImageButton) findViewById(R.id.btn_answer);
 		btn_answer.setOnClickListener(new OnClickListener() {
 
