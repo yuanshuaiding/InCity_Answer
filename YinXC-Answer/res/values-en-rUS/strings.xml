@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string name="hello">IncityDemo</string>
+    <string name="app_name">InCityDemo</string>
+	<string name="getNewsList_btn_text">Get news</string>
+	<string name="urlStr">http://172.16.104.251:8082/cs</string>
+	<string name="path">yxcxml/</string>
+	<string name="fileName">yxc.xml</string>
+    <string name="str_loginName">LoginName：</string>
+    <string name="str_password">PassWord：</string>
+    <string name="str_repassword">RePassWord：</string>
+    <string name="str_email">Email:</string>
+    <string name="str_loginName_hint">please input name &#8230;&#8230;&#8230;</string>
+    <string name="str_sure">Sure</string>
+     <string name="str_password_hint">your password&#8230;&#8230;&#8230;</string>
+    <string name="str_repassword_hint">repeat password &#8230;&#8230;&#8230;</string>
+    <string name="str_email_hint">your emial&#8230;&#8230;&#8230;</string>
+    <string name="str_qa">QA</string>
+</resources>

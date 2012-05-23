@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">印象城Demo</string>
+    <string name="app_name">印象城Demo</string>
+	<string name="getNewsList_btn_text">获取网络上的网易新闻列表</string>
+	<string name="urlStr">http://172.16.104.251:8082/cs</string>
+	<string name="path">yxcxml/</string>
+	<string name="fileName">yxc.xml</string>
+	<string name="str_loginName">用户名：</string>
+    <string name="str_password">密    码：</string>
+    <string name="str_repassword">重复密码：</string>
+    <string name="str_email">电子邮箱：</string>
+    <string name="str_loginName_hint">请输入用户名 &#8230;&#8230;&#8230;</string>
+    <string name="str_password_hint">请输入密码 &#8230;&#8230;&#8230;</string>
+    <string name="str_repassword_hint">请重复密码 &#8230;&#8230;&#8230;</string>
+    <string name="str_email_hint">请输入电子邮箱&#8230;&#8230;&#8230;</string>
+    <string name="str_sure">确  定</string>
+    <string name="str_qa">有奖问答</string>
+</resources>
