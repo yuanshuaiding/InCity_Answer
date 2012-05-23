@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -18,12 +19,10 @@ public class QuestionDetail extends Activity {
 	private TextView txt_question;
 	private RadioGroup choiceGroup;
 	private TextView toptitle;
-	private Button btn_pre;
-	private Button btn_next;
+	private ImageButton btn_pre;
+	private ImageButton btn_next;
 	private int index;
-	private Button btn_answer;
-	private int corrNum = 0;
-	private int answerNum = 0;
+	private ImageButton btn_answer;
 	private Button btn_check;
 	private Question question;
 
@@ -37,9 +36,9 @@ public class QuestionDetail extends Activity {
 		question = DataHelper.questionList.get(questionId);
 		index = questionId;
 		txt_question = (TextView) findViewById(R.id.txt_question);
-		ViewGroup topguid = (ViewGroup) findViewById(R.id.topguid);
+		ViewGroup topguid = (ViewGroup) getLayoutInflater().inflate(R.layout.topguid, null);
 		toptitle = (TextView) topguid.findViewById(R.id.txt_title);
-		btn_answer = (Button) findViewById(R.id.btn_answer);
+		btn_answer = (ImageButton) findViewById(R.id.btn_answer);
 		btn_answer.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -60,7 +59,7 @@ public class QuestionDetail extends Activity {
 				}
 			}
 		});
-		btn_pre = (Button) findViewById(R.id.btn_pre);
+		btn_pre = (ImageButton) findViewById(R.id.btn_pre);
 		btn_pre.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -68,7 +67,7 @@ public class QuestionDetail extends Activity {
 				buildQuestion(--index);
 			}
 		});
-		btn_next = (Button) findViewById(R.id.btn_next);
+		btn_next = (ImageButton) findViewById(R.id.btn_next);
 		btn_next.setOnClickListener(new OnClickListener() {
 
 			@Override

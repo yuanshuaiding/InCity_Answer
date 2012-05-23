@@ -2,54 +2,24 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="@drawable/wd_mainbg" >
 
     <include
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
         layout="@layout/topguid" />
 
-    <RelativeLayout
+    <!-- android:cacheColorHint="#00000000"防止拖动时出现全黑背景 -->
+
+    <ListView
+        android:id="@+id/list"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="vertical" >
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:background="#458B00"
-            android:orientation="vertical" >
-
-            <RelativeLayout
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:background="#F5F5F5" >
-
-                <TextView
-                    android:id="@+id/left"
-                    android:layout_width="15dp"
-                    android:layout_height="fill_parent"
-                    android:layout_alignParentLeft="true"
-                    android:background="@drawable/bg_left" />
-
-                <TextView
-                    android:id="@+id/right"
-                    android:layout_width="15dp"
-                    android:layout_height="fill_parent"
-                    android:layout_alignParentRight="true"
-                    android:background="@drawable/bg_right" />
-				<!-- android:cacheColorHint="#00000000"防止拖动时出现全黑背景 -->
-                <ListView
-                    android:id="@+id/list"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_toLeftOf="@+id/right"
-                    android:layout_toRightOf="@+id/left"
-                    android:cacheColorHint="#00000000"
-                    android:divider="@drawable/cutline_dashed"
-                    android:fastScrollEnabled="true" />
-            </RelativeLayout>
-        </LinearLayout>
-    </RelativeLayout>
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/cutline_dashed"
+        android:fastScrollEnabled="true" />
 
 </LinearLayout>

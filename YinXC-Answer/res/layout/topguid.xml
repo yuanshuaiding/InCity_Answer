@@ -3,7 +3,7 @@
     android:id="@+id/topguid"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content" 
-    android:background="@drawable/repeat_tit_bg">
+    android:background="@drawable/wd_titbg">
 
     <Button
         android:id="@+id/back"
